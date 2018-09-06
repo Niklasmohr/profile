@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body style="text-align: center">
+    <h1>Be My Friend</h1>
+    <input id="ageBox" type="number" placeholder="Enter your Age" >
+    <br>
+    <button ondblclick="checkAge()">Check</button>
+    <br>
+    <h2 id="result" ></h2>
+    <script>
+        function checkAge(){
+var age=document.getElementById("ageBox").value;
+if(age<18){
+    document.getElementById("result").innerHTML="you can be a freind of my kid";
+}
+else{
+    if(age<30){
+        document.getElementById("result").innerHTML="I like it";
+    }
+    else{
+        if(age<40){
+            document.getElementById("result").innerHTML="No way";
+        }
+        else{
+            if(age<50){
+                document.getElementById("result").innerHTML="go away 50 guy";
+            }
+    
+        }
+    }
+    }
+}
+
+        </script>
+</body>
+</html>

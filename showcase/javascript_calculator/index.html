@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <input type="number" id="firstNumbertext" placeholder="Enter the first Number" />
+    <input type="number" id="secondNumbertext" placeholder="Enter the second Number" />
+    <button onclick="add()" >+</button>
+    <button onclick="min()" >-</button>
+    <button onclick="mul()" >*</button>
+    <button onclick="div()" >/</button>
+    <button onclick="compar()" >compare</button>
+    <label id="result">result</label>
+<script>
+function add(){
+    clearBody();
+    //alert("yes teacher it is working");
+    var firstNumber=document.getElementById("firstNumbertext").value;
+    var secondNumber=document.getElementById("secondNumbertext").value;
+    var addNumber=parseFloat( firstNumber) + parseFloat(  secondNumber);
+    document.getElementById("result").innerHTML=addNumber;
+    //alert(addNumber);
+
+
+
+}
+function min(){
+    clearBody();
+    //alert("yes teacher it is working");
+    var firstNumber=document.getElementById("firstNumbertext").value;
+    var secondNumber=document.getElementById("secondNumbertext").value;
+    var addNumber=parseFloat( firstNumber) - parseFloat(  secondNumber);
+    document.getElementById("result").innerHTML=addNumber;
+    //alert(addNumber);
+
+
+
+}
+function mul(){
+    clearBody();
+    //alert("yes teacher it is working");
+    var firstNumber=document.getElementById("firstNumbertext").value;
+    var secondNumber=document.getElementById("secondNumbertext").value;
+    var addNumber=parseFloat( firstNumber) * parseFloat(  secondNumber);
+    document.getElementById("result").innerHTML=addNumber;
+    //alert(addNumber);
+if(addNumber>5000){
+    document.getElementsByTagName("body")[0].setAttribute("style","background-color:red;")
+}
+
+
+
+}
+function div(){
+    clearBody();
+    //alert("yes teacher it is working");
+    var firstNumber=document.getElementById("firstNumbertext").value;
+    var secondNumber=document.getElementById("secondNumbertext").value;
+if(parseFloat(  secondNumber)==0){
+    document.getElementById("result").innerHTML="Hey Smarty, you can not divid on Zero.";
+}else{
+    var addNumber=parseFloat(firstNumber) / parseFloat(  secondNumber);
+    document.getElementById("result").innerHTML=addNumber;
+}
+
+    
+
+}
+
+function clearBody(){
+    document.getElementsByTagName("body")[0].setAttribute("style","");
+
+
+
+}
+function  compar(){
+    var firstNumber =document.getElementById("firstNumbertext").value;
+    var secondNumber =document.getElementById("secondNumbertext").value;
+    if(parseFloat(firstNumber) > parseFloat(secondNumber) ){
+        document.getElementById("result").innerHTML=firstNumber+" is greater than "+secondNumber;
+    }
+    if(parseFloat(firstNumber) < parseFloat(secondNumber) ){
+        document.getElementById("result").innerHTML=firstNumber+" is smaller than "+secondNumber;
+    }
+    if(parseFloat(firstNumber) == parseFloat(secondNumber) ){
+        document.getElementById("result").innerHTML=firstNumber+" is equel than "+secondNumber;
+    }
+
+
+}
+</script>
+
+</body>
+</html>

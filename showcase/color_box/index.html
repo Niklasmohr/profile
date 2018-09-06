@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>color Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+   
+</head>
+<body>
+    <div class="container">
+<div id="colorBox" class="colorbox"></div>
+<input type="number" class="input" onchange="changeRed()" value="0"
+ id="redInput" min="0" max="255" />
+<input type="number" class="input" onchange="changeGreen()" value="0"
+ id="greenInput" min="0" max="255" />
+<input type="number" class="input" onchange="changeBlue()" value="0"
+ id="blueInput" min="0" max="255" />
+    </div>
+    <script>
+function doColor(red,green,blue){
+
+    if(parseFloat(red)>=0 && parseFloat(red)<=255 &&
+     parseFloat(green)>=0 && parseFloat(green)<=255 &&
+     parseFloat(blue)>=0 && parseFloat(blue)<=255 ){
+
+    
+    document.getElementById("colorBox").
+setAttribute("style","background-color:rgb("+
+red+","+green+","+blue+");");
+document.getElementById("colorBox").innerHTML="";
+}else{
+    document.getElementById("colorBox").innerHTML=
+    "Some Value is wrong<br/>Valid value should be between 0 and 255";
+}
+}
+
+    function changeRed(){
+var redNumber=document.getElementById("redInput").value;
+var greenNumber=document.getElementById("greenInput").value;
+var blueNumber=document.getElementById("blueInput").value;
+
+doColor(redNumber,greenNumber,blueNumber);
+
+document.getElementById("redInput").
+setAttribute("style","background-color:rgb("+
+redNumber+",0,0);");
+
+    }
+
+function changeGreen(){
+    var redNumber=document.getElementById("redInput").value;
+var greenNumber=document.getElementById("greenInput").value;
+var blueNumber=document.getElementById("blueInput").value;
+
+doColor(redNumber,greenNumber,blueNumber);
+
+document.getElementById("greenInput").
+setAttribute("style","background-color:rgb(0,"+
+greenNumber+",0);");
+
+}
+
+function changeBlue(){
+    var redNumber=document.getElementById("redInput").value;
+var greenNumber=document.getElementById("greenInput").value;
+var blueNumber=document.getElementById("blueInput").value;
+
+doColor(redNumber,greenNumber,blueNumber);
+
+document.getElementById("blueInput").
+setAttribute("style","background-color:rgb(0,0,"+blueNumber+");");
+}
+    </script>
+</body>
+</html>

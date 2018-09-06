@@ -1,0 +1,104 @@
+@keyframes move{
+    0%{
+        left: 0;
+        top:0;
+    }
+    25%{
+        left: 200px;
+        top:0;
+    }
+    50%{
+        left: 200px;
+        top:200px;
+    }
+    75%{
+        left: 0px;
+        top:200px;
+    }
+    100%{
+        left: 0px;
+        top:0px;
+    }
+}
+@keyframes stair{
+    0%{
+        left: 0;
+        top:0;
+    }
+    10%{
+        left: 50px;
+        top:0;
+    }
+    20%{
+        left: 50px;
+        top:50px;
+    }
+    30%{
+        left: 100px;
+        top:50px;
+    }
+    40%{
+        left: 100px;
+        top:100px;
+    }
+    50%{
+        left: 150px;
+        top:100px;
+    }
+    60%{
+        left: 150px;
+        top:150px;
+    }
+    70%{
+        left: 200px;
+        top:150px;
+    }
+    80%{
+        left: 200px;
+        top:200px;
+    }
+    90%{
+        left: 250px;
+        top:200px;
+    }
+    100%{
+        left: 250px;
+        top:250px;
+    }
+}
+.anim{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: stair;
+    animation-duration:10s;
+}
+.hoverme{
+    width:100px;
+    height:100px;
+    background-color: red;
+    transition:width 2ms, height 4s;
+    -webkit-transition:width 2s, height 4s; 
+    border-radius: 50% 50% 50% 50%;
+}
+.hoverme:hover{
+    width:300px;
+    height:300px;
+}
+.hot{
+    width:100px;
+    height: 100px;
+    background-color: blue;
+    box-shadow: 3px 3px 5px rgb(179, 84, 84);
+    color: white;
+    text-align: center;
+    transition-duration: 4s;
+    border-radius: 50% 50% 50% 50%;
+    line-height: 90px;
+}
+.hot:hover{
+    transform:rotateY(180deg);
+}
+.imag{
+    border-radius: 50% 50% 50% 50%;
+}

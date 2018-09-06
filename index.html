@@ -1,1 +1,305 @@
-heloo
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style/style.css">
+<script src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+    <h1 class="Logo">N.Mohr Project</h1>
+</div>
+
+<div class="topnav">
+  <a href="#" onClick="openTab(this);">Home</a>
+  <div id="myLinks">
+
+    <a href="#" onClick="openTab(this);">Skills</a>
+    <a href="#" onClick="openTab(this);">Showcase</a>
+    <a href="#" onClick="openTab(this);">Contact</a>
+    <a href="#" onClick="openTab(this);">About</a>
+  </div>
+  <a href="#" class="icon" onclick="toggleMenu();">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div id="contentArea">
+    <div class="pages">
+        <!--Tab content-->
+        <div id="home" class="tab active">  
+            <h2>Introduction</h2>
+            <p>Damit Ihr indess erkennt, woher dieser ganze Irrtum gekommen ist, und weshalb man die Lust anklagt und den Schmerz lobet, so will ich Euch Alles eröffnen und auseinander setzen, was jener Begründer der Wahrheit und gleichsam Baumeister des glücklichen Lebens selbst darüber gesagt hat.</p>
+            <br>
+            <center>
+                    <p>Here you can see some of my Clients :</p>
+                    <div id="slideWrapper"><br>
+                        <button onclick="newImage();">next Client</button><button onclick="setMyTimer();">Slideshow</button><br>
+                        <br><img src="img/1.jpg" id="myImage" width="240px" height=auto />
+                    </div><br><br>
+             </center>
+
+
+
+        </div>
+        <div id="skills" class="tab">  
+            <h2>Skill Overview</h2>
+            <p>HTML</p>
+            <div class="w3-light-grey">
+                <div class="w3-blue" style="height:24px;width:90%"></div>
+            </div>
+            <p>CSS</p>
+            <div class="w3-light-grey">
+                <div class="w3-blue" style="height:24px;width:90%"></div>
+            </div>
+            <p>PHP</p>
+            <div class="w3-light-grey">
+                <div class="w3-blue" style="height:24px;width:50%"></div>
+            </div>
+            <p>JavaScript & ES6</p>
+            <div class="w3-light-grey">
+                <div class="w3-blue" style="height:24px;width:80%"></div>
+            </div>
+            <p>JQuery</p>
+            <div class="w3-light-grey">
+                <div class="w3-blue" style="height:24px;width:80%"></div>
+            </div>
+            <p>react.JS</p>
+            <div class="w3-light-grey">
+                <div class="w3-blue" style="height:24px;width:20%"></div>
+            </div>
+            <p>angular.JS</p>
+            <div class="w3-light-grey">
+                <div class="w3-blue" style="height:24px;width:25%"></div>
+            </div>
+            <br>
+            <p>German</p>
+            <div class="w3-light-grey">
+                <div class="w3-red" style="height:24px;width:100%"></div>
+            </div>
+            <p>English</p>
+            <div class="w3-light-grey">
+                <div class="w3-red" style="height:24px;width:80%"></div>
+            </div>
+
+        </div>
+        <div id="showcase" class="tab">
+            <h2>Showcase of Lesson Result</h2>
+            <p>Click on any Link to open the project in a new tab !</p>
+<div class="showCase_element">
+    <a href="showcase/project_addition/audio_player/index.html" target="_blank" rel="noopener noreferrer">audio player</a>
+    <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+</div>
+    <div class="showCase_element">
+    <a href="showcase/project_addition/clock/index.html" target="_blank" rel="noopener noreferrer">clock</a>
+    <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    <div class="showCase_element">
+    <a href="showcase/project_addition/sliders/slider1.html" target="_blank" rel="noopener noreferrer">slider1</a>
+    <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    <div class="showCase_element">
+            <a href="showcase/project_addition/sliders/slide2.html" target="_blank" rel="noopener noreferrer">slider2</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+
+    <div class="showCase_element"><a href="showcase/project_addition/tabs/tabs.html" target="_blank" rel="noopener noreferrer">tabs</a>
+        <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div></div>
+    
+    <div class="showCase_element">
+            <a href="showcase/be_my_Friend/index.html" target="_blank" rel="noopener noreferrer">be my Friend</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+
+    <div class="showCase_element">
+            <a href="showcase/box_sizing/index.html" target="_blank" rel="noopener noreferrer">box sizing</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+        <a href="showcase/color_box/index.html" target="_blank" rel="noopener noreferrer">color box</a>
+        <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+
+    <div class="showCase_element">
+            <a href="showcase/divs/index.html" target="_blank" rel="noopener noreferrer">divs</a>
+            <a href="showcase/divs/index2.html" target="_blank" rel="noopener noreferrer">divs2</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+
+    <div class="showCase_element">
+            <a href="showcase/image_gallery/index.html" target="_blank" rel="noopener noreferrer">image gallery</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+            <a href="showcase/intro_to_javascript/index.html" target="_blank" rel="noopener noreferrer">intro to javascript</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+    <a href="showcase/javascript_array_objects/index.html" target="_blank" rel="noopener noreferrer">array</a>
+    <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    <div class="showCase_element">
+            <a href="showcase/javascript_calculator/index.html" target="_blank" rel="noopener noreferrer">calculator</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+            <a href="showcase/javascript_calculator_with_function/index.html" target="_blank" rel="noopener noreferrer">calculator with functions</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+            <a href="showcase/javascript_for_loop/index.html" target="_blank" rel="noopener noreferrer">for loop</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+            <a href="showcase/javascript_for_multiable_table/index.html" target="_blank" rel="noopener noreferrer">for multiable table </a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+            <a href="showcase/javascript_light_if/index.html" target="_blank" rel="noopener noreferrer">light on off</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+            <a href="showcase/javascript_loop_for _stars/index.html" target="_blank" rel="noopener noreferrer">for loop stars pattern</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+        <a href="showcase/Matrix/index.html" target="_blank" rel="noopener noreferrer">matrix</a>
+        <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+        <a href="showcase/navigation_with_sub_menu/index.html" target="_blank" rel="noopener noreferrer">navigation bar with subm</a>
+        <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+            <a href="showcase/navigationbar/index.html" target="_blank" rel="noopener noreferrer">navigation bar</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+
+    <div class="showCase_element">
+        <a href=showcase/navigationbar/index2.html" target="_blank" rel="noopener noreferrer">navigation bar1</a>
+        <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+            <a href="showcase/navigationbar/index3.html" target="_blank" rel="noopener noreferrer">navigation bar2</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>    
+    
+    <div class="showCase_element">
+        <a href="showcase/navsite/index.html" target="_blank" rel="noopener noreferrer">nav site</a>
+        <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+        <a href="showcase/random/index.html" target="_blank" rel="noopener noreferrer">random</a>
+        <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+        <a href="showcase/random_Photos/index.html" target="_blank" rel="noopener noreferrer">random photos</a>
+        <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+            <a href="showcase/responsivesite/index.html" target="_blank" rel="noopener noreferrer">responsive site</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    
+    <div class="showCase_element">
+        <a href="showcase/responsivesite/index.html" target="_blank" rel="noopener noreferrer">responsive site1</a>
+        <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+    
+    <div class="showCase_element">
+            <a href="showcase/navigationbar/index2.html" target="_blank" rel="noopener noreferrer">responsive site2</a>
+            <br/><div class="showcaseDescription"> Lorem Ipsum dolor sit amen </div>
+    </div>
+
+
+            
+        </div>
+        <div id="contact" class="tab">
+            <h2>Contact Me</h2>
+            <p>If you want to message or contact me fill out the form below or send me an Email <a href="mailto:Max@Mustermann.com"> Max@Mustermann.com</a></p>
+            <!--<form>-->
+                <table>
+                    <tr>
+                        <td> 
+                        <label>Name</label>
+                        </td>
+                        <td>
+                        <input type="text" id="name" width="150px">
+                        </td>
+                    </tr>
+                    <tr>
+                    <td> 
+                            <label>Absender</label>
+                    </td>
+                    <td>
+                            <input type="text" id="absender">
+                    </td>
+                    </tr>
+                    <tr>
+                    <td> 
+                            <label>Betreff</label>
+                    </td>
+                    <td>
+                            <input type="text" id="betreff">
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td> 
+                            <label>Ihre Nachricht</label>
+                    </td>
+                    <td>
+                            <textarea id="nachricht"></textarea>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" id="submit" onClick="checkForm()">Abschicken</button>
+                        </td>
+                    </tr>
+                 </table>
+                 <div id="formResult"></div>    
+            <!--</form>-->
+
+        </div>
+        <div id="about" class="tab">
+            
+            <h2>About Me</h2><img src="img/me.jpg" width="200px" height="auto" style="padding:0 0 10px 10px;float:right;">
+            <h4>Für Designer, Schriftsetzer, Layouter, Grafikenthusiasten und alle anderen.</h4>
+            <p class="article">Ein Projekt startet und doch es gibt noch keinen Text, allerdings sollte das Layout schon bald präsentiert werden ... was tun?<br><br>
+            Damit das Projekt gleich starten kann benutze einfach etwas Lorem ipsum - Blind-, Füll-, Dummy-, Nachahmungs-, Platzhaltertext.
+            Generiere einfach soviel Lorem Ipsum Text wie du brauchst, kopiere und füge ihn in dein Layout als vorübergehenden Platzhalter ein. Somit sieht das Projekt ein Stückchen vollständiger aus als zuvor. Viel Spaß dabei.</p>
+        </div><br>
+        <!--content in tabs end-->
+    </div>
+
+</div>
+</div>
+
+
+</body>
+</html>

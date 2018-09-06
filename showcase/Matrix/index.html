@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <input type="number" id="numbersBox" placeholder="Enter number" />
+    <button onclick="saveNumber()" >save</button>
+    <button onclick="showNumbers()" >show</button>
+    <button onclick="sortNumbers()" >Sort</button>
+    <button onclick="greaterNumber()" >Greater Number</button>
+    <button onclick="smallerNumber()" >Smaller Number</button>
+    <div id="result">
+    </div>
+    <script>
+        var arr=[];
+
+    function saveNumber(){
+        
+var userNumber=document.getElementById("numbersBox").value;
+if(!isNaN(parseFloat( userNumber))){
+
+//save the number inside the array after convert it to Number
+arr.push(parseFloat(userNumber));  
+document.getElementById("numbersBox").value="";
+}
+    }
+
+
+    function showNumbers(){
+        document.getElementById("result").innerHTML="";
+        for(var i=0;i< arr.length;i++){
+            document.getElementById("result").innerHTML =
+            document.getElementById("result").innerHTML + arr[i]+"<br>";
+        }
+    }
+    function sortNumbers(){
+        document.getElementById("result").innerHTML="";
+        arr.sort((a, b) => a - b);
+        for(var i=0;i< arr.length;i++){
+            document.getElementById("result").innerHTML =
+            document.getElementById("result").innerHTML + arr[i]+"<br>";
+        }
+    }
+
+
+    function greaterNumber(){
+        if(arr.length==0){
+            alert("array is empty");
+        }else{
+            arr.sort((a, b) => a - b);
+document.getElementById("result").innerHTML =arr[arr.length-1];
+        }
+
+
+    }
+
+    function smallerNumber(){
+        if(arr.length!=0){
+arr.sort((a, b) => a - b);
+document.getElementById("result").innerHTML =arr[0];
+}
+    }
+    </script>
+</body>
+</html>

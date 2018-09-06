@@ -1,0 +1,33 @@
+.main{
+    width:594px;
+    height: 594px;
+    padding: 0;
+    background-color: black;
+
+}
+.main div{
+    width: 275px;
+    height: 275px;
+    margin: 10px;
+    float: left;
+    border: 1px solid white;
+}
+.main1{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+.main1>div{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    background-color: white;
+}
+.main1>div>div{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    background-color: black;
+}

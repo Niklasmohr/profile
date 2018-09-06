@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <div class="box" ></div>
+    <input type="number" value="0" onchange="changeSize()" id="widthInput" />
+    <input type="number" value="0" onchange="changeSize()" id="heightInput" />
+    <script>
+function changeSize(){
+    var height=parseFloat( document.getElementById("heightInput").value);
+    var width=parseFloat( document.getElementById("widthInput").value);
+    if(height>=0 && width>=0){
+document.getElementsByClassName("box")[0].
+setAttribute("style","width:"+width+"px;height:"+height+"px;")
+    }
+
+}
+    
+    </script>
+</body>
+</html>

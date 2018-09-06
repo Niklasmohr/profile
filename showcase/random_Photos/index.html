@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .hidden{
+        /* float: left; */
+        display:none;
+    }
+    </style>
+</head>
+<body>
+    <img width="400" id="randomImage" src="images/1.jpg" alt="image" \>
+    <p id="par1" class="hidden">text1</p>
+    <p id="par2" class="hidden">text2</p>
+    <p id="par3" class="hidden">text3</p>
+    <p id="par4" class="hidden">text4</p>
+    <p id="par5" class="hidden">text5</p>
+    <p id="par6" class="hidden">text6</p>
+    <p id="par7" class="hidden">text7</p>
+    <p id="par8" class="hidden">text8</p>
+    <p id="par9" class="hidden">text9</p>
+    <p id="par10" class="hidden">text10</p>
+    <button onclick="guiss()" >Guiss</button>
+    <script>
+
+setInterval(guiss,1000);
+
+
+    function guiss(){
+        var randomNumber=Math.floor(Math.random() * 10)+1;
+        makeHidden();
+        document.getElementById("randomImage").setAttribute("src","images/"+randomNumber+".jpg");
+        document.getElementById("par"+randomNumber).setAttribute("style","display: block;");
+    }
+
+    function makeHidden(){
+        for(var i=1; i<=10 ; i++){
+            document.getElementById("par"+i).setAttribute("style","");
+        }
+    }
+    </script>
+</body>
+</html>
